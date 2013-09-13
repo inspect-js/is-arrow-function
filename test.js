@@ -3,6 +3,13 @@
 var test = require('tape');
 var isArrowFunction = require('./index');
 
+var forEach = function (arr, func) {
+	var i;
+	for (i = 0; i < arr.length; ++i) {
+		func(arr[i], i, arr);
+	}
+};
+
 test('returns false for non-functions', function (t) {
 	var nonFuncs = [
 		true,
@@ -17,7 +24,7 @@ test('returns false for non-functions', function (t) {
 		new Date()
 	];
 	t.plan(nonFuncs.length);
-	nonFuncs.forEach(function (nonFunc) {
+	forEach(nonFuncs, function (nonFunc) {
 		t.notOk(isArrowFunction(nonFunc), nonFunc + ' is not a function');
 	});
 	t.end();
