@@ -43,6 +43,14 @@ test('returns false for non-arrow functions', function (t) {
 	t.end();
 });
 
+test('returns false for non-arrow function with faked toString', function (t) {
+	var func = function () {};
+	func.toString = function () { return 'ARROW'; };
+
+	t.notOk(isArrowFunction(func), 'anonymous function with faked toString is not an arrow function');
+	t.end();
+});
+
 var makeArrowFunction = function () {
 	return Function('return (a, b) => a * b;')();
 };
