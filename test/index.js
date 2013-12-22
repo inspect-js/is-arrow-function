@@ -39,6 +39,8 @@ test('returns false for non-arrow functions', function (t) {
 
 	if (typeof window !== 'undefined') {
 		t.notOk(isArrowFunction(window.alert), 'window.alert is not an arrow function');
+	} else {
+		t.skip('window.alert is not an arrow function');
 	}
 	t.end();
 });
