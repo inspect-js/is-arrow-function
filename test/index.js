@@ -1,7 +1,7 @@
 "use strict";
 
 var test = require('tape');
-var isArrowFunction = require('./index');
+var isArrowFunction = require('../index');
 
 var forEach = function (arr, func) {
 	var i;

@@ -4,7 +4,7 @@
 	"description": "Determine if a function is an ES6 arrow function or not.",
 	"main": "index.js",
 	"scripts": {
-		"test": "node --harmony test.js"
+		"test": "node --harmony test/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -29,7 +29,7 @@
 		"tape": "~2.3.0"
 	},
 	"testling": {
-		"files": "test.js",
+		"files": "test/index.js",
 		"browsers": [
 			"iexplore/6.0..latest",
 			"firefox/3.0..6.0",
