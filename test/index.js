@@ -2,6 +2,7 @@
 
 var test = require('tape');
 var isArrowFunction = require('../index');
+var arrowFunc = require('../test/make-arrow-fn');
 
 var forEach = function (arr, func) {
 	var i;
@@ -53,11 +54,6 @@ test('returns false for non-arrow function with faked toString', function (t) {
 	t.end();
 });
 
-var makeArrowFunction = function () {
-	return Function('return (a, b) => a * b;')();
-};
-var arrowFunc;
-try { arrowFunc = makeArrowFunction(); } catch (e) {}
 
 test('returns true for arrow functions', function (t) {
 	if (arrowFunc) {
