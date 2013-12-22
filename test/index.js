@@ -57,12 +57,12 @@ var makeArrowFunction = function () {
 var arrowFunc;
 try { arrowFunc = makeArrowFunction(); } catch (e) {}
 
-if (arrowFunc) {
-	test('returns true for arrow functions', function (t) {
+test('returns true for arrow functions', function (t) {
+	if (arrowFunc) {
 		t.ok(isArrowFunction(arrowFunc), 'arrow function is arrow function');
-		t.end();
-	});
-} else {
-	console.log('This environment does not support ES6 arrow functions. Please run `node --harmony`, or use a supporting browser.');
-}
+	} else {
+		t.skip('arrow function is arrow function - this environment does not support ES6 arrow functions. Please run `node --harmony`, or use a supporting browser.');
+	}
+	t.end();
+});
 
