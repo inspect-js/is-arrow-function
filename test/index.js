@@ -50,6 +50,7 @@ test('returns false for non-arrow function with faked toString', function (t) {
 	var func = function () {};
 	func.toString = function () { return 'ARROW'; };
 
+	t.notEqual(String(func), Function.prototype.toString.call(func), 'test function has faked toString that is different from default toString');
 	t.notOk(isArrowFunction(func), 'anonymous function with faked toString is not an arrow function');
 	t.end();
 });
