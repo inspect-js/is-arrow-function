@@ -24,11 +24,11 @@ Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/is-arrow-function
 [2]: http://vb.teelaun.ch/ljharb/node-is-arrow-function.svg
-[3]: https://travis-ci.org/ljharb/node-is-arrow-function.png
+[3]: https://travis-ci.org/ljharb/node-is-arrow-function.svg
 [4]: https://travis-ci.org/ljharb/node-is-arrow-function
-[5]: https://david-dm.org/ljharb/node-is-arrow-function.png
+[5]: https://david-dm.org/ljharb/node-is-arrow-function.svg
 [6]: https://david-dm.org/ljharb/node-is-arrow-function
-[7]: https://david-dm.org/ljharb/node-is-arrow-function/dev-status.png
+[7]: https://david-dm.org/ljharb/node-is-arrow-function/dev-status.svg
 [8]: https://david-dm.org/ljharb/node-is-arrow-function#info=devDependencies
 [9]: https://ci.testling.com/ljharb/node-is-arrow-function.png
 [10]: https://ci.testling.com/ljharb/node-is-arrow-function
