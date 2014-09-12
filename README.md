@@ -1,8 +1,8 @@
 #is-arrow-function <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
 
 [![Build Status][travis-svg]][travis-url]
-[![dependency status][5]][6]
-[![dev dependency status][7]][8]
+[![dependency status][deps-svg]][deps-url]
+[![dev dependency status][dev-deps-svg]][dev-deps-url]
 
 [![npm badge][11]][npm-url]
 
@@ -28,10 +28,10 @@ Simply clone the repo, `npm install`, and run `npm test`
 [npm-version-svg]: http://vb.teelaun.ch/ljharb/node-is-arrow-function.svg
 [travis-svg]: https://travis-ci.org/ljharb/node-is-arrow-function.svg
 [travis-url]: https://travis-ci.org/ljharb/node-is-arrow-function
-[5]: https://david-dm.org/ljharb/node-is-arrow-function.svg
-[6]: https://david-dm.org/ljharb/node-is-arrow-function
-[7]: https://david-dm.org/ljharb/node-is-arrow-function/dev-status.svg
-[8]: https://david-dm.org/ljharb/node-is-arrow-function#info=devDependencies
+[deps-svg]: https://david-dm.org/ljharb/node-is-arrow-function.svg
+[deps-url]: https://david-dm.org/ljharb/node-is-arrow-function
+[dev-deps-svg]: https://david-dm.org/ljharb/node-is-arrow-function/dev-status.svg
+[dev-deps-url]: https://david-dm.org/ljharb/node-is-arrow-function#info=devDependencies
 [9]: https://ci.testling.com/ljharb/node-is-arrow-function.png
 [10]: https://ci.testling.com/ljharb/node-is-arrow-function
 [11]: https://nodei.co/npm/is-arrow-function.png?downloads=true&stars=true
