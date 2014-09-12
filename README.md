@@ -6,7 +6,7 @@
 
 [![npm badge][11]][npm-url]
 
-[![browser support][9]][10]
+[![browser support][testling-png]][testling-url]
 
 npm module to determine if a function is an ES6 arrow function or not.
 
@@ -32,7 +32,7 @@ Simply clone the repo, `npm install`, and run `npm test`
 [deps-url]: https://david-dm.org/ljharb/node-is-arrow-function
 [dev-deps-svg]: https://david-dm.org/ljharb/node-is-arrow-function/dev-status.svg
 [dev-deps-url]: https://david-dm.org/ljharb/node-is-arrow-function#info=devDependencies
-[9]: https://ci.testling.com/ljharb/node-is-arrow-function.png
-[10]: https://ci.testling.com/ljharb/node-is-arrow-function
+[testling-png]: https://ci.testling.com/ljharb/node-is-arrow-function.png
+[testling-url]: https://ci.testling.com/ljharb/node-is-arrow-function
 [11]: https://nodei.co/npm/is-arrow-function.png?downloads=true&stars=true
 
