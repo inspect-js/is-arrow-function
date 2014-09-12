@@ -1,6 +1,8 @@
 #is-arrow-function <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
 
-[![Build Status][3]][4] [![dependency status][5]][6] [![dev dependency status][7]][8]
+[![Build Status][travis-svg]][travis-url]
+[![dependency status][5]][6]
+[![dev dependency status][7]][8]
 
 [![npm badge][11]][npm-url]
 
@@ -24,8 +26,8 @@ Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/is-arrow-function
 [npm-version-svg]: http://vb.teelaun.ch/ljharb/node-is-arrow-function.svg
-[3]: https://travis-ci.org/ljharb/node-is-arrow-function.svg
-[4]: https://travis-ci.org/ljharb/node-is-arrow-function
+[travis-svg]: https://travis-ci.org/ljharb/node-is-arrow-function.svg
+[travis-url]: https://travis-ci.org/ljharb/node-is-arrow-function
 [5]: https://david-dm.org/ljharb/node-is-arrow-function.svg
 [6]: https://david-dm.org/ljharb/node-is-arrow-function
 [7]: https://david-dm.org/ljharb/node-is-arrow-function/dev-status.svg
