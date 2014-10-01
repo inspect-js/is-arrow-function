@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var makeArrowFunction = function () {
     return Function('return (a, b) => a * b;')();

@@ -3,7 +3,7 @@ var fnToStr = Function.prototype.toString;
 var isFnRegex = /^\s*function/;
 
 module.exports = function isArrowFunction(fn) {
-	"use strict";
+	'use strict';
 	var fnStr = toStr.call(fn);
 	return fnStr === '[object Function]' && !isFnRegex.test(fnToStr.call(fn));
 };
