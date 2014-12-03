@@ -19,6 +19,9 @@ var isArrowFunction = require('is-arrow-function');
 assert(!isArrowFunction(function () {}));
 assert(!isArrowFunction(null));
 assert(isArrowFunction((a, b) => a * b));
+assert(isArrowFunction(() => 42));
+assert(isArrowFunction(x => x * x));
+assert(isArrowFunction(x => () => x * x));
 ```
 
 ## Tests

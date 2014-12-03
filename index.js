@@ -2,10 +2,15 @@
 
 var toStr = Object.prototype.toString;
 var fnToStr = Function.prototype.toString;
-var isFnRegex = /^\s*function/;
+var isNonArrowFnRegex = /^\s*function/;
+var isArrowFnWithParensRegex = /^\([^\)]*\) *=>/;
+var isArrowFnWithoutParensRegex = /^[^=]*=>/;
 
 module.exports = function isArrowFunction(fn) {
-	var fnStr = toStr.call(fn);
-	return fnStr === '[object Function]' && !isFnRegex.test(fnToStr.call(fn));
+	var typeStr = toStr.call(fn);
+	var fnStr = typeStr === '[object Function]' ? fnToStr.call(fn) : '';
+	return fnStr.length > 0
+		&& !isNonArrowFnRegex.test(fnStr)
+		&& (isArrowFnWithParensRegex.test(fnStr) || isArrowFnWithoutParensRegex.test(fnStr));
 };
 
