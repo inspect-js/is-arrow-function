@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var isArrowFunction = require('../index');
-var arrowFuncs = require('../test/make-arrow-fns');
+var arrowFuncs = require('make-arrow-function').list();
 
 var forEach = function (arr, func) {
 	var i;
