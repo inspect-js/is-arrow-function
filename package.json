@@ -27,7 +27,9 @@
 	"bugs": {
 		"url": "https://github.com/ljharb/node-is-arrow-function/issues"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"is-callable": "~1.0.3"
+	},
 	"devDependencies": {
 		"tape": "~3.4.0",
 		"covert": "1.0.0",
