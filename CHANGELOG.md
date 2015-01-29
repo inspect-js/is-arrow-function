@@ -1,3 +1,9 @@
+2.0.2 / 2015-01-29
+==================
+  * Update `tape`, `jscs`
+  * Bail out early if typeof is not "function".
+  * Use `is-callable` to remove Object#toString checks.
+
 2.0.1 / 2014-12-15
 ==================
   * Use `make-arrow-function` instead of a local module.
