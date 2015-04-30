@@ -59,7 +59,7 @@ test('returns false for non-arrow function with faked toString', function (t) {
 test('returns true for arrow functions', function (t) {
 	if (arrowFuncs.length > 0) {
 		arrowFuncs.forEach(function (arrowFunc) {
-			t.ok(isArrowFunction(arrowFunc), 'arrow function ' + arrowFunc  + ' is arrow function');
+			t.ok(isArrowFunction(arrowFunc), 'arrow function ' + arrowFunc + ' is arrow function');
 		});
 	} else {
 		t.skip('arrow function is arrow function - this environment does not support ES6 arrow functions. Please run `node --harmony`, or use a supporting browser.');

@@ -31,9 +31,9 @@
 		"is-callable": "^1.0.4"
 	},
 	"devDependencies": {
-		"tape": "^3.5.0",
+		"tape": "^4.0.0",
 		"covert": "^1.0.1",
-		"jscs": "^1.11.3",
+		"jscs": "^1.13.0",
 		"make-arrow-function": "^1.0.0"
 	},
 	"testling": {
