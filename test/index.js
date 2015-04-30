@@ -38,6 +38,7 @@ test('returns false for non-arrow functions', function (t) {
 	var namedFunc = function foo() {};
 	t.notOk(isArrowFunction(namedFunc), 'named function is not an arrow function');
 
+	/*globals window */
 	if (typeof window !== 'undefined') {
 		t.notOk(isArrowFunction(window.alert), 'window.alert is not an arrow function');
 	} else {
@@ -55,7 +56,6 @@ test('returns false for non-arrow function with faked toString', function (t) {
 	t.end();
 });
 
-
 test('returns true for arrow functions', function (t) {
 	if (arrowFuncs.length > 0) {
 		arrowFuncs.forEach(function (arrowFunc) {
@@ -66,4 +66,3 @@ test('returns true for arrow functions', function (t) {
 	}
 	t.end();
 });
-
