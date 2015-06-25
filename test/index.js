@@ -38,7 +38,7 @@ test('returns false for non-arrow functions', function (t) {
 	var namedFunc = function foo() {};
 	t.notOk(isArrowFunction(namedFunc), 'named function is not an arrow function');
 
-	/*globals window */
+	/* globals window */
 	if (typeof window !== 'undefined') {
 		t.notOk(isArrowFunction(window.alert), 'window.alert is not an arrow function');
 	} else {
