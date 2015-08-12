@@ -28,7 +28,7 @@ assert(isArrowFunction(x => () => x * x));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/is-arrow-function
-[npm-version-svg]: http://vb.teelaun.ch/ljharb/node-is-arrow-function.svg
+[npm-version-svg]: http://versionbadg.es/ljharb/node-is-arrow-function.svg
 [travis-svg]: https://travis-ci.org/ljharb/node-is-arrow-function.svg
 [travis-url]: https://travis-ci.org/ljharb/node-is-arrow-function
 [deps-svg]: https://david-dm.org/ljharb/node-is-arrow-function.svg
