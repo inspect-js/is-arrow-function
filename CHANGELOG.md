@@ -1,3 +1,12 @@
+2.0.3 / 2015-08-16
+==================
+  * [Docs] Rename repo - "node-" is unnecessary
+  * [Docs] Switch from vb.teelaun.ch to versionbadg.es for the npm version badge SVG
+  * [Deps] update `is-callable`
+  * [Dev Deps] update `tape`, `jscs`, `covert`, `nsp`
+  * [Tests] up to `io.js` `v3.0`
+  * [Tests] add `npm run eslint` and `npm run security`
+
 2.0.2 / 2015-01-29
 ==================
   * Update `tape`, `jscs`
