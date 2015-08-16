@@ -28,14 +28,14 @@ assert(isArrowFunction(x => () => x * x));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/is-arrow-function
-[npm-version-svg]: http://versionbadg.es/ljharb/node-is-arrow-function.svg
-[travis-svg]: https://travis-ci.org/ljharb/node-is-arrow-function.svg
-[travis-url]: https://travis-ci.org/ljharb/node-is-arrow-function
-[deps-svg]: https://david-dm.org/ljharb/node-is-arrow-function.svg
-[deps-url]: https://david-dm.org/ljharb/node-is-arrow-function
-[dev-deps-svg]: https://david-dm.org/ljharb/node-is-arrow-function/dev-status.svg
-[dev-deps-url]: https://david-dm.org/ljharb/node-is-arrow-function#info=devDependencies
-[testling-png]: https://ci.testling.com/ljharb/node-is-arrow-function.png
-[testling-url]: https://ci.testling.com/ljharb/node-is-arrow-function
+[npm-version-svg]: http://versionbadg.es/ljharb/is-arrow-function.svg
+[travis-svg]: https://travis-ci.org/ljharb/is-arrow-function.svg
+[travis-url]: https://travis-ci.org/ljharb/is-arrow-function
+[deps-svg]: https://david-dm.org/ljharb/is-arrow-function.svg
+[deps-url]: https://david-dm.org/ljharb/is-arrow-function
+[dev-deps-svg]: https://david-dm.org/ljharb/is-arrow-function/dev-status.svg
+[dev-deps-url]: https://david-dm.org/ljharb/is-arrow-function#info=devDependencies
+[testling-png]: https://ci.testling.com/ljharb/is-arrow-function.png
+[testling-url]: https://ci.testling.com/ljharb/is-arrow-function
 [npm-badge-png]: https://nodei.co/npm/is-arrow-function.png?downloads=true&stars=true
 

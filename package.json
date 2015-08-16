@@ -14,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ljharb/node-is-arrow-function.git"
+		"url": "git://github.com/ljharb/is-arrow-function.git"
 	},
 	"keywords": [
 		"arrow",
@@ -28,7 +28,7 @@
 	"author": "Jordan Harband",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ljharb/node-is-arrow-function/issues"
+		"url": "https://github.com/ljharb/is-arrow-function/issues"
 	},
 	"dependencies": {
 		"is-callable": "^1.0.4"
