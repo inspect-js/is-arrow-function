@@ -39,10 +39,10 @@ test('returns false for non-arrow functions', function (t) {
 	t.notOk(isArrowFunction(namedFunc), 'named function is not an arrow function');
 
 	/* globals window */
-	if (typeof window !== 'undefined') {
-		t.notOk(isArrowFunction(window.alert), 'window.alert is not an arrow function');
-	} else {
+	if (typeof window === 'undefined') {
 		t.skip('window.alert is not an arrow function');
+	} else {
+		t.notOk(isArrowFunction(window.alert), 'window.alert is not an arrow function');
 	}
 	t.end();
 });
