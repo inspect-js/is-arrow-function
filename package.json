@@ -4,7 +4,8 @@
 	"description": "Determine if a function is an ES6 arrow function or not.",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && node --es-staging --harmony test/index.js && npm run security",
+		"test": "npm run lint && npm run tests-only && npm run security",
+		"tests-only": "node --es-staging --harmony test/index.js",
 		"coverage": "covert test/index.js",
 		"coverage-quiet": "covert test/index.js --quiet",
 		"lint": "npm run jscs && npm run eslint",
