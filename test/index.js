@@ -66,3 +66,12 @@ test('returns true for arrow functions', function (t) {
 	}
 	t.end();
 });
+
+test('return true for arrow function in string', function (t) {
+  if (arrowFuncs.length > 0) {
+    t.ok(isArrowFunction('(a, b) => a * b'), 'arrow function in string');
+  } else {
+    t.skip('arrow function is arrow function - this environment does not support ES6 arrow functions. Please run `node --harmony`, or use a supporting browser.');
+  }
+  t.end();
+});

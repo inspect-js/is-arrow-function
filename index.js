@@ -7,9 +7,10 @@ var isArrowFnWithParensRegex = /^\([^\)]*\) *=>/;
 var isArrowFnWithoutParensRegex = /^[^=]*=>/;
 
 module.exports = function isArrowFunction(fn) {
-	if (!isCallable(fn)) { return false; }
-	var fnStr = fnToStr.call(fn);
-	return fnStr.length > 0 &&
-		!isNonArrowFnRegex.test(fnStr) &&
-		(isArrowFnWithParensRegex.test(fnStr) || isArrowFnWithoutParensRegex.test(fnStr));
+	var type = typeof fn;
+  if (!isCallable(fn) && type !== 'string') { return false; }
+  var fnStr = type === 'string' ? fn : fnToStr.call(fn);
+  return fnStr.length > 0 &&
+    !isNonArrowFnRegex.test(fnStr) &&
+    (isArrowFnWithParensRegex.test(fnStr) || isArrowFnWithoutParensRegex.test(fnStr));
 };
