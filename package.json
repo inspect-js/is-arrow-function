@@ -36,13 +36,13 @@
 		"is-callable": "^1.1.1"
 	},
 	"devDependencies": {
-		"tape": "^4.2.2",
+		"@ljharb/eslint-config": "^12.2.1",
 		"covert": "^1.1.0",
-		"jscs": "^2.7.0",
+		"eslint": "^4.5.0",
+		"jscs": "^3.0.7",
 		"make-arrow-function": "^1.1.0",
-		"eslint": "^1.10.3",
-		"@ljharb/eslint-config": "^1.6.0",
-		"nsp": "^2.1.0"
+		"nsp": "^2.7.0",
+		"tape": "^4.8.0"
 	},
 	"testling": {
 		"files": "test/index.js",
