@@ -1,3 +1,5 @@
+# gitignore
+
 lib-cov
 *.seed
 *.log
@@ -14,3 +16,7 @@ results
 npm-debug.log
 node_modules/
 
+# Only apps should have lockfiles
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock
