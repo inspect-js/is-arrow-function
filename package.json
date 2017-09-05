@@ -33,7 +33,7 @@
 		"url": "https://github.com/ljharb/is-arrow-function/issues"
 	},
 	"dependencies": {
-		"is-callable": "^1.1.1"
+		"is-callable": "^1.1.3"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^12.2.1",
