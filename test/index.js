@@ -3,6 +3,7 @@
 var test = require('tape');
 var isArrowFunction = require('../index');
 var arrowFuncs = require('make-arrow-function').list();
+var asyncFuncs = require('make-async-function').list();
 
 var forEach = function (arr, func) {
 	var i;
@@ -63,6 +64,20 @@ test('returns true for arrow functions', function (t) {
 		});
 	} else {
 		t.skip('arrow function is arrow function - this environment does not support ES6 arrow functions. Please run `node --harmony`, or use a supporting browser.');
+	}
+	t.end();
+});
+
+test('returns true for async arrow functions', function (t) {
+	if (asyncFuncs.length > 0) {
+		asyncFuncs.slice(0, 2).forEach(function (asyncFunc) {
+			t.ok(isArrowFunction(asyncFunc), 'async arrow function ' + asyncFunc + ' is arrow function');
+		});
+		asyncFuncs.slice(2).forEach(function (asyncFunc) {
+			t.notOk(isArrowFunction(asyncFunc), 'async non-arrow function ' + asyncFunc + ' is not an arrow function');
+		});
+	} else {
+		t.skip('async arrow function is arrow function - this environment does not support ES2017 async functions. Please run `node --harmony`, or use a supporting browser.');
 	}
 	t.end();
 });
