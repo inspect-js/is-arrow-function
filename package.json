@@ -38,12 +38,12 @@
 	"devDependencies": {
 		"@ljharb/eslint-config": "^12.2.1",
 		"covert": "^1.1.0",
-		"eslint": "^4.11.0",
+		"eslint": "^4.19.1",
 		"jscs": "^3.0.7",
 		"make-arrow-function": "^1.1.0",
 		"make-async-function": "^1.0.0",
-		"nsp": "^3.1.0",
-		"tape": "^4.8.0"
+		"nsp": "^3.2.1",
+		"tape": "^4.9.0"
 	},
 	"testling": {
 		"files": "test/index.js",
