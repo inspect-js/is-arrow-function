@@ -6,13 +6,15 @@
 	"scripts": {
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
-		"posttest": "npm run security",
+		"posttest": "npm run audit",
 		"tests-only": "node --es-staging --harmony test",
 		"coverage": "covert test",
 		"lint": "npm run jscs && npm run eslint",
 		"jscs": "jscs *.js */*.js",
 		"eslint": "eslint *.js */*.js",
-		"security": "nsp check"
+		"preaudit": "npm install --package-lock --package-lock-only",
+		"audit": "npm audit",
+		"postaudit": "rm package-lock.json"
 	},
 	"repository": {
 		"type": "git",
@@ -42,7 +44,6 @@
 		"jscs": "^3.0.7",
 		"make-arrow-function": "^1.1.0",
 		"make-async-function": "^1.0.0",
-		"nsp": "^3.2.1",
 		"tape": "^4.9.0"
 	},
 	"testling": {
