@@ -4,13 +4,8 @@ var test = require('tape');
 var isArrowFunction = require('../index');
 var arrowFuncs = require('make-arrow-function').list().slice(0, -2);
 var asyncFuncs = require('make-async-function').list();
-
-var forEach = function (arr, func) {
-	var i;
-	for (i = 0; i < arr.length; ++i) {
-		func(arr[i], i, arr);
-	}
-};
+var generatorFuncs = require('make-generator-function')();
+var forEach = require('for-each');
 
 test('returns false for non-functions', function (t) {
 	var nonFuncs = [
@@ -70,14 +65,22 @@ test('returns true for arrow functions', function (t) {
 
 test('returns true for async arrow functions', function (t) {
 	if (asyncFuncs.length > 0) {
-		asyncFuncs.slice(0, 2).forEach(function (asyncFunc) {
+		forEach(asyncFuncs.slice(0, 2), function (asyncFunc) {
 			t.ok(isArrowFunction(asyncFunc), 'async arrow function ' + asyncFunc + ' is arrow function');
 		});
-		asyncFuncs.slice(2).forEach(function (asyncFunc) {
+		forEach(asyncFuncs.slice(2), function (asyncFunc) {
 			t.notOk(isArrowFunction(asyncFunc), 'async non-arrow function ' + asyncFunc + ' is not an arrow function');
 		});
 	} else {
 		t.skip('async arrow function is arrow function - this environment does not support ES2017 async functions. Please run `node --harmony`, or use a supporting browser.');
 	}
+	t.end();
+});
+
+test('generators', { skip: generatorFuncs.length === 0 }, function (t) {
+	forEach(generatorFuncs, function (genFn) {
+		t.notOk(isArrowFunction(genFn), 'generator function ' + genFn + ' is not an arrow function');
+	});
+
 	t.end();
 });
