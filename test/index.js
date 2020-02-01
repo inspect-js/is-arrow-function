@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var isArrowFunction = require('../index');
-var arrowFuncs = require('make-arrow-function').list();
+var arrowFuncs = require('make-arrow-function').list().slice(0, -2);
 var asyncFuncs = require('make-async-function').list();
 
 var forEach = function (arr, func) {
