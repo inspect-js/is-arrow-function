@@ -14,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ljharb/is-arrow-function.git"
+		"url": "git://github.com/inspect-js/is-arrow-function.git"
 	},
 	"keywords": [
 		"arrow",
@@ -31,7 +31,7 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ljharb/is-arrow-function/issues"
+		"url": "https://github.com/inspect-js/is-arrow-function/issues"
 	},
 	"dependencies": {
 		"is-callable": "^1.2.2"
