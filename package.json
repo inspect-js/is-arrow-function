@@ -34,7 +34,7 @@
 		"url": "https://github.com/inspect-js/is-arrow-function/issues"
 	},
 	"dependencies": {
-		"is-callable": "^1.2.2"
+		"is-callable": "^1.2.3"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.5.0",
