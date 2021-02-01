@@ -1,4 +1,4 @@
-#is-arrow-function <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
+# is-arrow-function <sup>[![Version Badge][npm-version-svg]][npm-url]</sup>
 
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
@@ -25,7 +25,7 @@ assert(isArrowFunction(x => () => x * x));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [npm-url]: https://npmjs.org/package/is-arrow-function
-[npm-version-svg]: http://versionbadg.es/inspect-js/is-arrow-function.svg
+[npm-version-svg]: https://versionbadg.es/inspect-js/is-arrow-function.svg
 [deps-svg]: https://david-dm.org/inspect-js/is-arrow-function.svg
 [deps-url]: https://david-dm.org/inspect-js/is-arrow-function
 [dev-deps-svg]: https://david-dm.org/inspect-js/is-arrow-function/dev-status.svg
